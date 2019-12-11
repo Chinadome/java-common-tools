@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.com.zeroten</groupId>
-    <artifactId>javales</artifactId>
+    <artifactId>java-common-tools</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
