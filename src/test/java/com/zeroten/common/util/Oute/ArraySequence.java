@@ -1,4 +1,4 @@
-package com.zeroten.common.util;
+package com.zeroten.common.util.Oute;
 
 import java.util.Arrays;
 
@@ -16,7 +16,7 @@ public class ArraySequence {
     public  void print(){
         System.out.println(Arrays.toString(data));
     }
-    class  SelectorImpl implements Selector{
+    class  SelectorImpl implements Selector {
        private int index=0;
         @Override
         public boolean end() {

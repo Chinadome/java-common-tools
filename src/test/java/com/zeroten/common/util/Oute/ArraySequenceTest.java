@@ -1,5 +1,6 @@
-package com.zeroten.common.util;
+package com.zeroten.common.util.Oute;
 
+import com.zeroten.common.util.Oute.ArraySequence;
 import org.testng.annotations.Test;
 
 public class ArraySequenceTest {

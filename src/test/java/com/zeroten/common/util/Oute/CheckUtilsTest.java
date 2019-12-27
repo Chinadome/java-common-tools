@@ -1,5 +1,6 @@
-package com.zeroten.common.util;
+package com.zeroten.common.util.Oute;
 
+import com.zeroten.common.util.CheckUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

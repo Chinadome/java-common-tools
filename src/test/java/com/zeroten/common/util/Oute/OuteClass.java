@@ -1,4 +1,4 @@
-package com.zeroten.common.util;
+package com.zeroten.common.util.Oute;
 
 public class OuteClass {
     private int index;
