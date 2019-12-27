@@ -1,4 +1,4 @@
-package com.zeroten.common.util;
+package com.zeroten.common.util.Oute;
 
 public  class CheckUtils {
     public static boolean isAnyEmpty(String... strings){
