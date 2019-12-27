@@ -1,0 +1,59 @@
+内部类有哪些种类？
+答：局部内部类，匿名内部类 ，静态内部类,方法内部类
+内部类和局部内部类的区别？
+  答： 内部类它可以使⽤ pubic、 protected、private 修饰符。
+       内部类中不能存在任何 static 的变量和⽅法，但可以定义常量。
+       内部类对同⼀个包中的其他类不可⻅。
+       内部类的⽅法可以访问该类定义所在的作⽤域中的数据，包括私有数据。
+       局部内部类与局部变量一样，不能使用访问控制修饰符（public、private 和 protected）和 static 修饰符修饰。
+       局部内部类只在当前方法中有效。
+       局部内部类中不能定义 static 成员。
+       在局部内部类中可以访问外部类的所有成员。
+
+内部类的作⽤？
+答： 内部类提供了更好的封装，可以把内部类隐藏在外部类之内，不允许同一个包中的其他类访问该类
+     内部类的方法可以直接访问外部类的所有数据，包括私有的数据
+     内部类所实现的功能使用外部类同样可以实现，只是有时使用内部类更方便
+内部类可以被继承吗？
+ 答： 可以被继承
+匿名内部类可以有静态成员变量和静态⽅法吗？为什么？
+   匿名内部类不能定义任何静态成员、方法和类
+   不能使用访问控制修饰符（public、private 和 protected）和 static 修饰符修饰。
+
+下边代码执⾏结果
+public class Outer {
+ public int num = 1;
+ class Inner {
+ public int num = 2;
+ public void show() {
+ int num = 3;
+ System.out.println(num);
+ System.out.println(this.num);
+ System.out.println(Outer.this.num);
+ }
+ }
+ public static void main(String[] args) {
+ Outer.Inner inner = new Outer().new Inner();
+ inner.show();
+ }
+}
+答：3,2,1
+补全代码，执⾏结果要求打印出字符串 helloworld
+public class Outer {
+ interface Inter {
+ void show();
+ }
+ // TODO: 补全代码
+ /******************补充代码部分*******************/
+ public  static Inter create(){
+         return new Inter(){
+             public  void show(){
+                 System.out.println("helloworld");
+             }
+         };
+  }
+ /*****************************************/
+ public static void main(String[] args) {
+     Outer.create().show();
+ }
+}
