@@ -1,0 +1,3 @@
+ArrayList和linkedList 区别？
+//ArrayList长于随机访问快，而从中间删除和修改比较慢
+//LinkeList随机访问比教慢，擅长于中间删除和修改比教快
